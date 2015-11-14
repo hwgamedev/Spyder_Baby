@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
+    public static float distanceTraveled;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,15 +12,14 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        distanceTraveled = transform.localPosition.y;
 
-	}
+        transform.Translate(0f, (-5) * Time.deltaTime, 0f);
+
+    }
 
 
     void FixedUpdate() {
-        movement();             //moves player left and right;
-    }
-    
-    void movement() {
         if (Input.GetKey("left"))
         {
             transform.Translate((-40f) * Time.deltaTime, 0f, 0f);
@@ -28,8 +29,10 @@ public class Player : MonoBehaviour {
         else if (Input.GetKey("right"))
         {
             transform.Translate((40f) * Time.deltaTime, 0f, 0f);
-            gameObject.GetComponent<SpriteRenderer>().color = Color.black; //test to show movement on game screen
+            gameObject.GetComponent<SpriteRenderer>().color = Color.cyan; //test to show movement on game screen
 
         }
+    
+
     }
 }
