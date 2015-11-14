@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class BackgroundManager : MonoBehaviour {
-    public Transform[] prefab; //the cloud sprite that will be generated
+    public Transform prefab; //the cloud sprite that will be generated
     public int numberOfClouds;
     public Vector2 startPosition;
     public float recycleOffset;
@@ -18,7 +18,7 @@ public class BackgroundManager : MonoBehaviour {
         objectQueue = new Queue<Transform>(numberOfClouds);     //generate new queue to store cloud objects for background
 
         for (int i = 0; i< numberOfClouds; i++) {
-            objectQueue.Enqueue((Transform)Instantiate(prefab[i]));
+            objectQueue.Enqueue((Transform)Instantiate(prefab));
         }
 
         startPosition = nextPosition;
@@ -30,15 +30,15 @@ public class BackgroundManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("cloud pos - recycle " + (objectQueue.Peek().localPosition.y - recycleOffset));
-        Debug.Log("player position " + Player.distanceTraveled);
-        if (objectQueue.Peek().localPosition.y + recycleOffset > Player.distanceTraveled){
+        Debug.Log("cloud pos - recycle " + (objectQueue.Peek().localPosition.y - recycleOffset) + "player position " + Player.distanceTraveled);
+        if (objectQueue.Peek().localPosition.y + (recycleOffset) > Player.distanceTraveled){
             Recycle();
         }
 
     }
 
     void Recycle() {
+        Debug.Log("pop");
         Vector2 scale = new Vector2(
                 Random.Range(minSize.x, maxSize.x),
                 Random.Range(minSize.y, maxSize.y));

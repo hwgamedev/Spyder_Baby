@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
             transform.Translate((-40f) * Time.deltaTime, 0f, 0f);
             gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
 
+
         }
         else if (Input.GetKey("right"))
         {

@@ -94,11 +94,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 497448, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .0979999974
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 497448, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.061999999
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 497448, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: m_LocalPosition.z
@@ -143,6 +143,10 @@ Prefab:
     - target: {fileID: 5096434, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: m_AngularDrag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 470008, guid: 2631e8d8def234947a04206687129307, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5096434, guid: 2631e8d8def234947a04206687129307, type: 2}
@@ -335,15 +339,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b29d75c4bfe0c4a942858084c8ed1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab:
-  - {fileID: 1328341525}
-  - {fileID: 1461733457}
-  - {fileID: 536750205}
-  numberOfClouds: 40
-  startPosition: {x: 0, y: 0}
-  recycleOffset: -4
-  minSize: {x: -15, y: 10}
-  maxSize: {x: 15, y: -20}
+  prefab: {fileID: 1328341525}
+  numberOfClouds: 10
+  startPosition: {x: -10, y: 0}
+  recycleOffset: 5
+  minSize: {x: 0, y: 0}
+  maxSize: {x: 0, y: -10}
 --- !u!212 &1593680719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -429,34 +430,34 @@ Prefab:
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: prefab
       value: 
-      objectReference: {fileID: 472830, guid: 6d08272dfbb45f145a37cc60fab8a334, type: 2}
+      objectReference: {fileID: 1328341525}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: numberOfClouds
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
-      propertyPath: startPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
-      propertyPath: recycleOffset
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
-      propertyPath: minSize.x
-      value: -15
-      objectReference: {fileID: 0}
-    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
-      propertyPath: minSize.y
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
+      propertyPath: startPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
+      propertyPath: recycleOffset
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
+      propertyPath: minSize.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
+      propertyPath: minSize.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: maxSize.x
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: maxSize.y
-      value: -20
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: startPosition.y
