@@ -22,18 +22,22 @@ public class Player : MonoBehaviour {
     void FixedUpdate() {
         if (Input.GetKey("left"))
         {
-            transform.Translate((-40f) * Time.deltaTime, 0f, 0f);
+            transform.Translate((-15f) * Time.deltaTime, 0f, 0f);
             gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
 
 
         }
         else if (Input.GetKey("right"))
         {
-            transform.Translate((40f) * Time.deltaTime, 0f, 0f);
+            transform.Translate((15f) * Time.deltaTime, 0f, 0f);
             gameObject.GetComponent<SpriteRenderer>().color = Color.cyan; //test to show movement on game screen
 
         }
-    
+
+        if (transform.position.x <= 5.0){
+            transform.position = new Vector2(-4.3f, transform.position.y);
+        }
+
 
     }
 }

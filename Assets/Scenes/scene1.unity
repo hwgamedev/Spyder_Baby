@@ -130,7 +130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2081848, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: orthographic size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5096434, guid: 2631e8d8def234947a04206687129307, type: 2}
       propertyPath: m_Constraints
@@ -342,9 +342,9 @@ MonoBehaviour:
   prefab: {fileID: 1328341525}
   numberOfClouds: 10
   startPosition: {x: -10, y: 0}
-  recycleOffset: 5
-  minSize: {x: 0, y: 0}
-  maxSize: {x: 0, y: -10}
+  recycleOffset: -5
+  minSize: {x: -10, y: 0}
+  maxSize: {x: 10, y: -10}
 --- !u!212 &1593680719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -441,11 +441,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: recycleOffset
-      value: 5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: minSize.x
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: minSize.y
@@ -453,7 +453,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: maxSize.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11490184, guid: da848c030025a914ebf5fff4ecac21ff, type: 2}
       propertyPath: maxSize.y
