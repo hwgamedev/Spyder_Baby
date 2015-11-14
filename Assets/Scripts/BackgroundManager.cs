@@ -30,7 +30,7 @@ public class BackgroundManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("cloud pos - recycle " + (objectQueue.Peek().localPosition.y - recycleOffset) + "player position " + Player.distanceTraveled);
+       // Debug.Log("cloud pos - recycle " + (objectQueue.Peek().localPosition.y - recycleOffset) + "player position " + Player.distanceTraveled);
         if (objectQueue.Peek().localPosition.y + (recycleOffset) > Player.distanceTraveled){
             Recycle();
         }

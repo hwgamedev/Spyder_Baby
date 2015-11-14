@@ -14,7 +14,7 @@ public class Player : MonoBehaviour {
 	void Update () {
         distanceTraveled = transform.localPosition.y;
 
-        transform.Translate(0f, (-5) * Time.deltaTime, 0f);
+        transform.Translate(0f, (-5f) * Time.deltaTime, 0f);
 
     }
 
@@ -34,9 +34,14 @@ public class Player : MonoBehaviour {
 
         }
 
-        if (transform.position.x <= 5.0){
-            transform.position = new Vector2(-4.3f, transform.position.y);
+        //X axis
+        if (transform.position.x <= -9){
+            transform.position = new Vector2(-9f, transform.position.y);
         }
+        else if (transform.position.x >= 8.4f){
+            transform.position = new Vector2(8.5f, transform.position.y);
+        }
+
 
 
     }
