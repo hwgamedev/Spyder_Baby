@@ -4,10 +4,11 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
     public static float distanceTraveled;
+    public Vector2 startPosition;
 
 	// Use this for initialization
 	void Start () {
-	
+         startPosition = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -20,17 +21,13 @@ public class Player : MonoBehaviour {
 
 
     void FixedUpdate() {
-        if (Input.GetKey("left"))
-        {
+        if (Input.GetKey("left")){
             transform.Translate((-15f) * Time.deltaTime, 0f, 0f);
-            gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
-
-
+            //gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
         }
-        else if (Input.GetKey("right"))
-        {
+        else if (Input.GetKey("right")){
             transform.Translate((15f) * Time.deltaTime, 0f, 0f);
-            gameObject.GetComponent<SpriteRenderer>().color = Color.cyan; //test to show movement on game screen
+            //gameObject.GetComponent<SpriteRenderer>().color = Color.cyan; //test to show movement on game screen
 
         }
 
@@ -42,7 +39,18 @@ public class Player : MonoBehaviour {
             transform.position = new Vector2(8.5f, transform.position.y);
         }
 
-
-
     }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        die();
+        Debug.Log("It has colided");
+    }
+
+    void die()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
 }
