@@ -16,9 +16,8 @@ public class Player : MonoBehaviour {
 
     void FixedUpdate() {
         movement();             //moves player left and right;
-
     }
-
+    
     void movement() {
         if (Input.GetKey("left"))
         {
