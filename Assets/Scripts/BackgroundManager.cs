@@ -38,7 +38,6 @@ public class BackgroundManager : MonoBehaviour {
     }
 
     void Recycle() {
-        Debug.Log("pop");
         Vector2 scale = new Vector2(
                 Random.Range(minSize.x, maxSize.x),
                 Random.Range(minSize.y, maxSize.y));
