@@ -45,7 +45,6 @@ public class Player : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         die();
-        Debug.Log("It has colided");
     }
 
     void die()

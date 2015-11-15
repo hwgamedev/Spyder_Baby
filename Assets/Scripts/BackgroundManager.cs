@@ -39,8 +39,7 @@ public class BackgroundManager : MonoBehaviour {
 
    public void Recycle() {
         Vector2 scale = new Vector2(
-                Random.Range(minSize.x, maxSize.x),
-                Random.Range(minSize.y, maxSize.y));
+                Random.Range(minSize.x, maxSize.x),-15);
 
         Vector2 position = nextPosition;
         position.x += scale.x * 0.5f;

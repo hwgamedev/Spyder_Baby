@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 456598}
   - 212: {fileID: 21249590}
-  - 60: {fileID: 6019748}
   m_Layer: 0
   m_Name: Cloud-Triple
   m_TagString: Untagged
@@ -29,40 +28,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!60 &6019748
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114186}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: .639999986, y: -.200000003}
-      - {x: .65269196, y: .0385898352}
-      - {x: .60197556, y: .0357177854}
-      - {x: .569999993, y: .109999999}
-      - {x: .496056676, y: .0912279487}
-      - {x: .430000007, y: .239999995}
-      - {x: .230000004, y: .239999995}
-      - {x: .185395792, y: .140775979}
-      - {x: .0708991587, y: .248461366}
-      - {x: -.0695584416, y: .247772962}
-      - {x: -.144291833, y: .145355284}
-      - {x: -.251583755, y: .248720527}
-      - {x: -.372665405, y: .247532994}
-      - {x: -.468128443, y: .182125211}
-      - {x: -.455655098, y: .126662433}
-      - {x: -.535897791, y: .087564826}
-      - {x: -.639999986, y: .0199999996}
-      - {x: -.639999986, y: -.0900000036}
-      - {x: -.550000012, y: -.200000003}
-      - {x: -.479999989, y: -.239999995}
-      - {x: .464490294, y: -.279486239}
 --- !u!212 &21249590
 SpriteRenderer:
   m_ObjectHideFlags: 1
