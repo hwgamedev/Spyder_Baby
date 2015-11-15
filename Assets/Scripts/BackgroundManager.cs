@@ -14,7 +14,7 @@ public class BackgroundManager : MonoBehaviour {
 
 
 	// Use this for initialization
-    void Start () {
+    private void Start () {
         objectQueue = new Queue<Transform>(numberOfClouds);     //generate new queue to store cloud objects for background
 
         for (int i = 0; i< numberOfClouds; i++) {
@@ -27,9 +27,9 @@ public class BackgroundManager : MonoBehaviour {
             Recycle();
         }
     }
-	
+
 	// Update is called once per frame
-	void Update () {
+	private void Update () {
        // Debug.Log("cloud pos - recycle " + (objectQueue.Peek().localPosition.y - recycleOffset) + "player position " + Player.distanceTraveled);
         if (objectQueue.Peek().localPosition.y + (recycleOffset) > Player.distanceTraveled){
             Recycle();

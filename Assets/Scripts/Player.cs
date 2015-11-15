@@ -7,9 +7,10 @@ public class Player : MonoBehaviour {
     public Vector2 startPosition;
 
 	// Use this for initialization
-	void Start () {
+	private void Start () {
          startPosition = transform.position;
-	}
+           
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,10 +18,18 @@ public class Player : MonoBehaviour {
 
         transform.Translate(0f, (-5f) * Time.deltaTime, 0f);
 
+        if (Player.distanceTraveled < -150)
+        {
+            Time.timeScale = 0.0F;
+            var textArea = new Rect(0, 0, Screen.width, Screen.height);
+            GUI.Label(textArea, "YOU WIN!!!");
+        }
+
     }
 
 
-    void FixedUpdate() {
+    private void FixedUpdate() {
+
         if (Input.GetKey("left")){
             transform.Translate((-15f) * Time.deltaTime, 0f, 0f);
             //gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
@@ -42,12 +51,12 @@ public class Player : MonoBehaviour {
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         die();
     }
 
-    void die()
+    private void die()
     {
         Application.LoadLevel(Application.loadedLevel);
     }
