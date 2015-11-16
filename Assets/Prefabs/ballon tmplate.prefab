@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 441344}
   - 212: {fileID: 21276262}
   - 60: {fileID: 6098776}
+  - 114: {fileID: 11406586}
   m_Layer: 0
   m_Name: ballon tmplate
   m_TagString: baloon
@@ -163,6 +164,17 @@ PolygonCollider2D:
       - {x: .335000008, y: -3.86999989}
       - {x: .36500001, y: -3.58999991}
       - {x: .495000005, y: -3.49000001}
+--- !u!114 &11406586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d24d41720d79754da878505733456a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21276262
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -186,7 +198,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 3866e00ef5c09ff4e9327b0e77af32a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
@@ -199,6 +211,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: baloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
