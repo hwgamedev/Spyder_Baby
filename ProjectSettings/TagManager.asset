@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - baloon
+  - cloud1
+  - cloud2
+  - cloud3
   layers:
   - Default
   - TransparentFX

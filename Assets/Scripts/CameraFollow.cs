@@ -5,8 +5,8 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform target;
 
-    void Update()
-    {
-        transform.position = new Vector3(transform.position.x, target.position.y, -10);
+    void Update() {
+        if (!(Player.distanceTraveled < -98))
+            transform.position = new Vector3(transform.position.x, target.position.y, -10);
     }
 }

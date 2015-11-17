@@ -15,12 +15,7 @@ Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.UI
 Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.059 seconds
+- Completed reload, in  0.062 seconds
 desktop: 1920x1080 30Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 23ac -> priority: 1 
-  Thread -> id: 183c -> priority: 1 

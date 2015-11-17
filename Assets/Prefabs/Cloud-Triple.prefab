@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 456598}
   - 212: {fileID: 21249590}
+  - 114: {fileID: 11421586}
   m_Layer: 0
   m_Name: Cloud-Triple
-  m_TagString: Untagged
+  m_TagString: cloud3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23,11 +24,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.09500003, y: .209999993, z: 0}
+  m_LocalPosition: {x: 4.79745674, y: -29.7900009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11421586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6024274c1cfe464cbf6608c8854c888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance_Down: 90
 --- !u!212 &21249590
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -72,6 +85,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Constraints
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OBJECT
+      value: 
+      objectReference: {fileID: 114186}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Distance_Down
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: cloud3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 402722}
   - 212: {fileID: 21233886}
+  - 114: {fileID: 11409568}
   m_Layer: 0
   m_Name: Cloud-Single
-  m_TagString: Untagged
+  m_TagString: cloud1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23,11 +24,23 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .476000011, y: .663999975, z: 0}
+  m_LocalPosition: {x: -2.36497688, y: -29.3360004, z: 0}
   m_LocalScale: {x: 1, y: .979555011, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11409568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6024274c1cfe464cbf6608c8854c888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Distance_Down: 90
 --- !u!212 &21233886
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -68,6 +81,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OBJECT
+      value: 
+      objectReference: {fileID: 159846}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Distance_Down
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: cloud1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Player : MonoBehaviour {
 
@@ -9,7 +8,6 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	private void Start () {
          startPosition = transform.position;
-           
     }
 	
 	// Update is called once per frame
@@ -18,12 +16,12 @@ public class Player : MonoBehaviour {
 
         transform.Translate(0f, (-5f) * Time.deltaTime, 0f);
 
-        if (Player.distanceTraveled < -150)
-        {
-            Time.timeScale = 0.0F;
-            var textArea = new Rect(0, 0, Screen.width, Screen.height);
-            GUI.Label(textArea, "YOU WIN!!!");
-        }
+//        if (Player.distanceTraveled < -110)
+ //       {
+ //           Time.timeScale = 0.0F;
+  //          var textArea = new Rect(0, 0, Screen.width, Screen.height);
+  //          GUI.Label(textArea, "YOU WIN!!!");
+  //      }
 
     }
 
@@ -31,11 +29,11 @@ public class Player : MonoBehaviour {
     private void FixedUpdate() {
 
         if (Input.GetKey("left")){
-            transform.Translate((-15f) * Time.deltaTime, 0f, 0f);
+            transform.Translate((-7.5f) * Time.deltaTime, 0f, 0f);
             //gameObject.GetComponent<SpriteRenderer>().color = Color.green; //test to show movement on game screen
         }
         else if (Input.GetKey("right")){
-            transform.Translate((15f) * Time.deltaTime, 0f, 0f);
+            transform.Translate((7.5f) * Time.deltaTime, 0f, 0f);
             //gameObject.GetComponent<SpriteRenderer>().color = Color.cyan; //test to show movement on game screen
 
         }
