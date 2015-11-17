@@ -2,20 +2,54 @@ Initialize engine version: 5.2.2f1 (3757309da7e7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
-    Vendor:   ATI
-    VRAM:     3072 MB
+    Renderer: NVIDIA GeForce GT 630  (ID=0xfc2)
+    Vendor:   NVIDIA
+    VRAM:     1990 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Cameron\Desktop\spyder\halffinished_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.062 seconds
-desktop: 1920x1080 30Hz; virtual: 1920x1080 at 0,0
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  1.402 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: H:\.windows_settings\Desktop\Unity Projects\Brokensweeper\halffinished_Data\Managed\System.dll (this message is harmless)
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 23d4 -> priority: 1 
+  Thread -> id: 23cc -> priority: 1 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.596461 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 455.
+Total: 0.176583 ms (FindLiveObjects: 0.024751 ms CreateObjectMapping: 0.010866 ms MarkObjects: 0.137041 ms  DeleteObjects: 0.003622 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.641437 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 455.
+Total: 0.145794 ms (FindLiveObjects: 0.022035 ms CreateObjectMapping: 0.011470 ms MarkObjects: 0.110478 ms  DeleteObjects: 0.001811 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.719315 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 455.
+Total: 0.183526 ms (FindLiveObjects: 0.035014 ms CreateObjectMapping: 0.010866 ms MarkObjects: 0.133720 ms  DeleteObjects: 0.003622 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.707241 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 455.
+Total: 0.148813 ms (FindLiveObjects: 0.034411 ms CreateObjectMapping: 0.009659 ms MarkObjects: 0.102026 ms  DeleteObjects: 0.002112 ms)
+
